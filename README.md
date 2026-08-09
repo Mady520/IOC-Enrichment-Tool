@@ -48,6 +48,32 @@ pip3 install requests python-dotenv rich pyyaml scapy
 Requires higher version of python on both platforms.
 
 ---
+## Clone & Run
+
+```bash
+git clone https://github.com/Mady520/IOC-Enrichment-Tool.git
+cd IOC-Enrichment-Tool
+```
+Windows:
+```bash
+pip install -r requirements.txt
+copy .env.example .env
+```
+Linux:
+``` bash
+pip3 install -r requirements.txt
+cp .env.example .env
+Open .env and add your API keys, then run:
+```
+Windows:
+```bash
+
+python run.py access.log
+```
+Linux:
+```bash
+
+python3 run.py access.log
 
 ## Setup
 
