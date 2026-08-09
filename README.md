@@ -63,8 +63,9 @@ Linux:
 ``` bash
 pip3 install -r requirements.txt
 cp .env.example .env
-Open .env and add your API keys, then run:
 ```
+Open .env and add your API keys, then run:
+
 Windows:
 ```bash
 
@@ -74,12 +75,12 @@ Linux:
 ```bash
 
 python3 run.py access.log
-
+```
 ## Setup
 
 **1. API keys** - copy `.env.example` to `.env` and fill in your keys:
 
-```
+```bash
 ABUSEIPDB_KEY=your_key
 VIRUSTOTAL_KEY=your_key
 OTX_KEY=your_key
