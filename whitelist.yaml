@@ -1,0 +1,27 @@
+# IOCs in these lists are skipped during enrichment entirely.
+# Add internal infrastructure, known CDN ranges, trusted DNS resolvers, etc.
+# This prevents wasting API quota on IPs/domains you already know are safe.
+
+ipv4:
+  - 8.8.8.8        # Google DNS
+  - 8.8.4.4        # Google DNS
+  - 1.1.1.1        # Cloudflare DNS
+  - 1.0.0.1        # Cloudflare DNS
+
+ipv6: []
+
+domains:
+  - google.com
+  - microsoft.com
+  - cloudflare.com
+  - amazonaws.com
+  - akamaiedge.net
+  - windows.com
+  - windowsupdate.com
+
+urls: []
+
+hashes:
+  md5: []
+  sha1: []
+  sha256: []

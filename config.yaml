@@ -1,0 +1,31 @@
+cache:
+  enabled: true
+  ttl_days: 7          # re-query an IOC after this many days
+  file: cache.json
+
+history:
+  file: history.json   # tracks every IOC ever seen across all runs
+
+whitelist:
+  file: whitelist.yaml
+
+severity:
+  critical_vt_malicious: 10   # VirusTotal engines flagging as malicious
+  high_vt_malicious: 5
+  critical_abuse_score: 80    # AbuseIPDB confidence score (0-100)
+  high_abuse_score: 50
+
+email:
+  enabled: false
+  smtp_host: smtp.gmail.com
+  smtp_port: 587
+  sender: ""           # your Gmail address
+  password: ""         # Gmail App Password (not your login password)
+  recipients: []       # list of addresses to alert
+  send_on:             # only send when these severities are found
+    - CRITICAL
+    - HIGH
+
+output:
+  html_report: true
+  html_file: report.html

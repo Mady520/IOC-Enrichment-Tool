@@ -1,0 +1,20 @@
+# API keys — never commit this
+.env
+
+# Auto-generated output files — contain real investigation data
+cache.json
+history.json
+report.html
+enriched_report.json
+enriched_report.csv
+*.log
+packet_log.txt
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE folders
+.vscode/
+.idea/
